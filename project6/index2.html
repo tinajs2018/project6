@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock demo</title>
+    <style>
+.btn{
+    color: #444444;
+    border: none;
+    display: block;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+
+}
+.btn:hover{
+    color: red;
+}
+.accordiaon{
+    background-color: white;
+    font-size: 18px;
+    display: none;
+}
+.active.btn{
+    background-color: rosybrown;
+}
+
+    </style>
+</head>
+<body>
+  <h2> The house of cards</h2> 
+  <button class="btn">Judges</button> 
+<div class="accordiaon">
+<p>The  It Lorem ipsum dolor sit amet, consectetur 
+adipisi cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+ laborisnisi ut aliquip ex ea commodo consequat</p>
+</div>
+
+<button class="btn">Contestants</button>
+<div class="accordiaon">
+    <p>The  It Lorem ipsum dolor sit amet, consectetur 
+    adipisi cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+     laborisnisi ut aliquip ex ea commodo consequat</p>
+    </div>
+
+    <button class="btn">Audience</button>
+    <div class="accordiaon">
+        <p>The  It Lorem ipsum dolor sit amet, consectetur 
+        adipisi cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+         laborisnisi ut aliquip ex ea commodo consequat</p>
+        </div>
+
+<script>
+   var button=document.getElementsByClassName('btn');
+   var i;
+   for ( i = 0; i < button .length; i++){
+       button[i].addEventListener("click",function(){
+           var  acc=this.nextElementSibling;
+     if( acc .style .display ==="block"){
+         acc.style.display="none"
+     }else{
+         acc.style.display ="Block"
+     }
+    
+       })
+   }
+   
+</script>
+
+</body>
+</html>
